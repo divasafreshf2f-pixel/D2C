@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Divasa Fresh – Farmers to Family</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divasa Fresh – Farmers to Family</title>
 
-<link rel="stylesheet" href="styles.css" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-  <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.querySelector(".mobile-drop-btn");
-  const dropdown = document.querySelector(".mobile-dropdown");
-
-  menuBtn.addEventListener("click", function () {
-    dropdown.classList.toggle("active");
-  });
-});
-</script>
-
 
 <body>
 
@@ -27,23 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
 <header class="navbar">
   <div class="nav-container">
 
-    <!-- LOGO / BRAND -->
-    <div class="logo">
-      Divasa Fresh
-    </div>
+    <div class="logo">Divasa Fresh</div>
 
-    <!-- MENU -->
     <ul class="nav-menu">
+      <li class="desktop-only"><a href="#home">Home</a></li>
+      <li class="desktop-only"><a href="#contact">Contact Us</a></li>
 
-      <!-- TOP ROW (MOBILE ONLY) -->
-      <li class="nav-top">
-        <a href="#home">Home</a>
-        <a href="#contact">Contact Us</a>
-      </li>
-
-      <!-- DROPDOWN -->
       <li class="mobile-dropdown">
-        <a href="javascript:void(0)" class="mobile-drop-btn">Menu ▾</a>
+        <button class="mobile-drop-btn">Menu ▾</button>
         <ul class="mobile-dropdown-menu">
           <li><a href="#about">About Us</a></li>
           <li><a href="#services">Services</a></li>
@@ -51,244 +30,104 @@ document.addEventListener("DOMContentLoaded", function () {
           <li><a href="#enquiry">Business Enquiry</a></li>
         </ul>
       </li>
-
     </ul>
 
   </div>
 </header>
 
-
-  <!-- MOBILE DROPDOWN -->
-  <li class="mobile-dropdown">
-    <a href="javascript:void(0)" class="mobile-drop-btn">Menu ▾</a>
-    <ul class="mobile-dropdown-menu">
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#horeca">HORECA</a></li>
-      <li><a href="#enquiry">Business Enquiry</a></li>
-    </ul>
-  </li>
-
-</ul>
-
-
 <!-- ================= HERO ================= -->
 <section id="home" class="hero">
-  <div class="hero-content">
-    <h1>Building a Fair, Transparent Farm-to-Market Food System</h1>
-    <p>
-      Divasa Fresh is a professional farm-to-market fresh produce platform
-      connecting Indian farmers directly with households and businesses through
-      structured sourcing, quality discipline, and reliable supply operations.
-    </p>
-  </div>
+  <h1>Building a Fair, Transparent Farm-to-Market Food System</h1>
+  <p>
+    Divasa Fresh connects Indian farmers directly with households and businesses
+    through structured sourcing, quality discipline, and reliable supply.
+  </p>
 </section>
-  
-  <img class="full-image"
-src="https://images.unsplash.com/photo-1587393855524-087f83d95bc9?w=1600&auto=format&fit=crop&q=80"
-alt="Fresh strawberries from farm" />
 
-
+<img class="full-image"
+src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1600"
+alt="Farm fresh produce">
 
 <!-- ================= ABOUT ================= -->
 <section id="about" class="section">
   <div class="container">
     <h2>About Divasa Fresh</h2>
-
     <p>
-      Divasa Fresh – Farmers to Family was created with a clear purpose: to build
-      a responsible, efficient, and transparent farm-to-market system that works
-      for farmers, consumers, and professional buyers alike.
-    </p>
-
-    <p>
-      India’s agricultural supply chain is complex and fragmented. Farmers often
-      operate without demand visibility, while buyers face inconsistency in
-      quality and reliability. Divasa Fresh bridges this gap by acting as a
-      structured aggregation and distribution platform rather than a traditional
-      trading intermediary.
-    </p>
-
-    <p>
-      Our focus is not on short-term transactions, but on building long-term
-      sourcing relationships, operational discipline, and trust across the value
-      chain. Every decision we take is guided by sustainability, quality, and
-      fairness.
+      Divasa Fresh – Farmers to Family is a responsible farm-to-market platform
+      designed to ensure fairness, quality, and long-term sustainability.
     </p>
   </div>
 </section>
 
-  <img class="grid-image"
-src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1200&auto=format&fit=crop&q=80"
-alt="Farmer " />
-
-  <section class="section">
+<!-- ================= FARMER GRID ================= -->
+<section class="section light">
   <div class="container">
     <h2>Our Farmer Network</h2>
-
     <div class="farmer-grid">
-      <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600" alt="Farmer 1">
-      <img src="https://images.unsplash.com/photo-1598514982999-7c65a3a9e3b7?w=600" alt="Farmer 2">
-      <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600" alt="Farmer 3">
-      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600" alt="Farmer 4">
-      <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600" alt="Farmer 5">
+      <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600">
+      <img src="https://images.unsplash.com/photo-1598514982999-7c65a3a9e3b7?w=600">
+      <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600">
+      <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600">
     </div>
   </div>
 </section>
 
-
-
-
-<!-- ================= VISION ================= -->
-<section id="vision" class="section light">
-  <div class="container">
-    <h2>Vision & Mission</h2>
-
-    <p class="quote">“When farmers grow, the nation grows.”</p>
-
-    <p>
-      Our vision is to create a sustainable food ecosystem where farmers earn
-      fairly, food quality is respected, and consumers receive honest produce
-      through transparent systems.
-    </p>
-
-    <p>
-      Our mission is to design and operate a disciplined farm-to-market platform
-      that supports predictable sourcing, professional quality standards, and
-      dependable delivery across households and businesses.
-    </p>
-  </div>
-</section>
-
-<img class="full-image"
-src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1600&auto=format&fit=crop&q=80"
-alt="Fresh vegetable salad" />
-
-
-<!-- ================= MODEL ================= -->
-<section id="model" class="section">
-  <div class="container">
-    <h2>Our Farm-to-Market Model</h2>
-
-    <p class="flow">
-      Farm → Aggregation → Quality Check → Distribution → Customer
-    </p>
-
-    <p>
-      Divasa Fresh operates through a clearly defined sourcing and distribution
-      model designed to maintain freshness, consistency, and accountability at
-      every stage.
-    </p>
-
-    <p>
-      Produce is sourced directly from farmers and farmer groups, aggregated
-      through organized collection points, quality-verified, and distributed
-      efficiently to customers without unnecessary storage cycles.
-    </p>
-  </div>
-</section>
-
-  <img class="grid-image"
-src="https://images.unsplash.com/photo-1556911220-bff31c812dba?w=1200&auto=format&fit=crop&q=80"
-alt="Professional hotel kitchen" />
-
-
 <!-- ================= SERVICES ================= -->
-<section id="services" class="section light">
+<section id="services" class="section">
   <div class="container">
     <h2>Our Services</h2>
-
     <ul class="service-list">
-      <li>Farm-to-market fresh produce sourcing</li>
-      <li>Quality-checked vegetable supply</li>
-      <li>Household delivery & bulk supply</li>
-      <li>Retail & supermarket sourcing</li>
-      <li>HORECA supply & kitchen-grade produce</li>
-      <li>Institutional & bulk procurement</li>
+      <li>Farm-to-market sourcing</li>
+      <li>Quality-checked supply</li>
+      <li>Retail & supermarket supply</li>
+      <li>HORECA procurement</li>
+      <li>Bulk & institutional orders</li>
     </ul>
   </div>
 </section>
 
-  <img class="grid-image"
-src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&auto=format&fit=crop&q=80"
-alt="Supermarket vegetables and fruits section" />
-
-  <img class="grid-image"
-src="https://images.unsplash.com/photo-1518843875459-f738682238a6?w=1200&auto=format&fit=crop&q=80"
-alt="Fresh vegetables and fruits assortment" />
-
-
 <!-- ================= HORECA ================= -->
-<section id="horeca" class="section">
+<section id="horeca" class="section light">
   <div class="container">
-    <h2>Built for HORECA & Professional Buyers</h2>
-
+    <h2>Built for HORECA</h2>
     <p>
-      Professional kitchens require reliability, consistency, and quality
-      discipline. Divasa Fresh supports hotels, restaurants, cafés, cloud kitchens,
-      and institutional buyers through structured procurement and dependable
-      delivery.
-    </p>
-
-    <p>
-      Our systems are designed to align with professional kitchen standards,
-      ensuring produce meets usage requirements, grading expectations, and
-      operational timelines.
+      Reliable, consistent, kitchen-grade produce supplied with operational discipline.
     </p>
   </div>
 </section>
-
-  <img class="grid-image"
-src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=1200&auto=format&fit=crop&q=80"
-alt="Cafe food with burger and fresh greens like spinach and broccoli" />
-
 
 <!-- ================= ENQUIRY ================= -->
-
-  
-  <section id="enquiry" class="section light">
+<section id="enquiry" class="section">
   <div class="container">
     <h2>Business Enquiry</h2>
-<form action="https://formsubmit.co/divasafreshf2f@gmail.com" method="POST">
 
-    
-      <input type="text" name="name" placeholder="Full Name" required />
-      <input type="text" name="company" placeholder="Business / Organization" />
-      <input type="tel" name="phone" placeholder="Phone Number" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="text" name="city" placeholder="City / Location" />
-      <select name="enquiryType">
-        <option>Supply</option>
-        <option>Bulk Order</option>
-        <option>Partnership</option>
-        <option>General</option>
-      </select>
+    <form action="https://formsubmit.co/divasafreshf2f@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="text" name="company" placeholder="Business / Organization">
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email Address" required>
       <textarea name="message" placeholder="Message"></textarea>
-      <button type="submit">Submit Enquiry</button>
-    <input type="hidden" name="_subject" value="New Business Enquiry - Divasa Fresh">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
 
-          </form>
+      <input type="hidden" name="_subject" value="New Business Enquiry - Divasa Fresh">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Submit Enquiry</button>
+    </form>
   </div>
 </section>
 
-<!-- ================= CONTACTUS ================= -->
-<section id="contact us" class="section">
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section light">
   <div class="container">
     <h2>Contact Us</h2>
     <p>Email: divasafreshf2f@gmail.com</p>
-    <p>Phone Number: +91 9900152573</p>
-    <p>Operational Regions: Bengaluru , Chikkaballapur , Kolar </p>
-    <p class="cta">Let’s build a fair food system together.</p>
+    <p>Phone: +91 9900152573</p>
   </div>
 </section>
 
 <footer>
-  <p>
-    Divasa Fresh – Farmers to Family<br />
-    Building a fair, transparent, and sustainable agri-supply ecosystem.
-  </p>
+  <p>© Divasa Fresh – Farmers to Family</p>
 </footer>
 
 <script src="script.js"></script>
