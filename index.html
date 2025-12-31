@@ -10,21 +10,53 @@
 
 </head>
   <script>
-  document.querySelector('.mobile-drop-btn').addEventListener('click', function () {
-    document.querySelector('.mobile-dropdown').classList.toggle('active');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.querySelector(".mobile-drop-btn");
+  const dropdown = document.querySelector(".mobile-dropdown");
+
+  menuBtn.addEventListener("click", function () {
+    dropdown.classList.toggle("active");
   });
+});
 </script>
+
 
 <body>
 
 <!-- ================= NAVBAR ================= -->
-<ul class="nav-menu">
+<header class="navbar">
+  <div class="nav-container">
 
-  <!-- TOP ROW (HOME + CONTACT) -->
-  <li class="nav-top">
-    <a href="#home">Home</a>
-    <a href="#contact">Contact Us</a>
-  </li>
+    <!-- LOGO / BRAND -->
+    <div class="logo">
+      Divasa Fresh
+    </div>
+
+    <!-- MENU -->
+    <ul class="nav-menu">
+
+      <!-- TOP ROW (MOBILE ONLY) -->
+      <li class="nav-top">
+        <a href="#home">Home</a>
+        <a href="#contact">Contact Us</a>
+      </li>
+
+      <!-- DROPDOWN -->
+      <li class="mobile-dropdown">
+        <a href="javascript:void(0)" class="mobile-drop-btn">Menu ▾</a>
+        <ul class="mobile-dropdown-menu">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#horeca">HORECA</a></li>
+          <li><a href="#enquiry">Business Enquiry</a></li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </div>
+</header>
+
 
   <!-- MOBILE DROPDOWN -->
   <li class="mobile-dropdown">
@@ -89,6 +121,20 @@ alt="Fresh strawberries from farm" />
   <img class="grid-image"
 src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=1200&auto=format&fit=crop&q=80"
 alt="Farmer " />
+
+  <section class="section">
+  <div class="container">
+    <h2>Our Farmer Network</h2>
+
+    <div class="farmer-grid">
+      <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8?w=600" alt="Farmer 1">
+      <img src="https://images.unsplash.com/photo-1598514982999-7c65a3a9e3b7?w=600" alt="Farmer 2">
+      <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600" alt="Farmer 3">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=600" alt="Farmer 4">
+      <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?w=600" alt="Farmer 5">
+    </div>
+  </div>
+</section>
 
 
 
@@ -198,11 +244,14 @@ alt="Cafe food with burger and fresh greens like spinach and broccoli" />
 
 
 <!-- ================= ENQUIRY ================= -->
-<section id="enquiry" class="section light">
+
+  
+  <section id="enquiry" class="section light">
   <div class="container">
     <h2>Business Enquiry</h2>
+<form action="https://formsubmit.co/divasafreshf2f@gmail.com" method="POST">
 
-    <form id="enquiryForm">
+    
       <input type="text" name="name" placeholder="Full Name" required />
       <input type="text" name="company" placeholder="Business / Organization" />
       <input type="tel" name="phone" placeholder="Phone Number" required />
@@ -216,8 +265,11 @@ alt="Cafe food with burger and fresh greens like spinach and broccoli" />
       </select>
       <textarea name="message" placeholder="Message"></textarea>
       <button type="submit">Submit Enquiry</button>
-      <p id="status"></p>
-    </form>
+    <input type="hidden" name="_subject" value="New Business Enquiry - Divasa Fresh">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+
+          </form>
   </div>
 </section>
 
