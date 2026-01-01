@@ -179,3 +179,79 @@ footer {
 .split ul {
   margin-top: 15px;
 }
+/* FULL WIDTH LIGHT BLUE BLOCK */
+.full-width-blue {
+  width: 100%;
+  background: #90D5FF;
+  padding: 110px 0;
+}
+
+.full-width-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+.content-left h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.content-left h3 {
+  font-size: 22px;
+  margin-top: 28px;
+}
+
+.content-left p,
+.content-left li {
+  font-size: 16.5px;
+  line-height: 1.8;
+}
+
+.content-left ul {
+  margin-left: 18px;
+}
+
+/* RIGHT CONTENT */
+.content-right {
+  display: grid;
+  gap: 26px;
+}
+
+.side-image {
+  width: 100%;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.time-slot-card {
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 28px;
+}
+
+.time-slot-card h3 {
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.time-slot-card p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  .full-width-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .content-left h2 {
+    font-size: 30px;
+  }
+}
