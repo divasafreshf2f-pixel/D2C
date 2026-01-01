@@ -333,3 +333,40 @@ footer {
     font-size: 30px;
   }
 }
+/* LIGHT YELLOW VEGETABLE BLOCK */
+.bg-light-yellow {
+  background: #FFF4C9;
+}
+
+/* LEFT TIME BOX */
+.veg-time-box {
+  text-align: center;
+}
+
+.veg-time-box h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.time-big {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 26px;
+  background: #25D366;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.whatsapp-btn:hover {
+  background: #1ebe5d;
+}
