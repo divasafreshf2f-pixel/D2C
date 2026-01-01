@@ -370,3 +370,45 @@ footer {
 .whatsapp-btn:hover {
   background: #1ebe5d;
 }
+/* TRUE FULL WIDTH BLOCK */
+.full-width-block {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 80px 0;
+}
+
+/* PALE PINK BACKGROUND */
+.bg-pale-pink {
+  background-color: #F9D1D5;
+}
+
+/* INNER CONTENT */
+.fw-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* IMAGE */
+.fw-image {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+}
+
+/* LIST */
+.juice-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .fw-inner {
+    grid-template-columns: 1fr;
+  }
+}
